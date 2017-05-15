@@ -1,0 +1,26 @@
+*{
+  margin: 0px auto;
+  padding: 0px auto;
+}
+#wrapper{
+  width: 970px;
+  height: 1000px;
+}
+#wrapper h1{
+  display: inline-block;
+}
+.function_wrapper{
+  height: 90px;
+  text-align: center;
+  border: solid 1px black;
+  border-bottom-style: none;
+}
+.blue_text{
+  color: blue;
+}
+.cool_wrapper img{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: top;
+}

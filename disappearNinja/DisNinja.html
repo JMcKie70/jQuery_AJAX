@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing Ninja</title>
+    <link rel='stylesheet' type='text/css' href='style2.css'>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type='text/javascript'>
+      $(document).ready(function() {
+        $('img').click(function() {
+          $(this).hide();
+        });
+        $('button').click(function() {
+          $('img').show();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>JQuery - assignment 1</h1>
+      <div id="main">
+        <div id="upper">
+          <div class="ninja">
+            <img src="ninja.png" alt="ninja icon">
+          </div>
+          <div class="ninja">
+            <img src="ninja.png" alt="ninja icon">
+          </div>
+          <div class="ninja">
+            <img src="ninja.png" alt="ninja icon">
+          </div>
+          <div class="ninja">
+            <img src="ninja.png" alt="ninja icon">
+          </div>
+        </div>
+        <div id="lower">
+          <div class="ninja">
+            <img src="ninja.png" alt="ninja icon">
+          </div>
+          <div class="ninja">
+            <img src="ninja.png" alt="ninja icon">
+          </div>
+          <div class="ninja">
+            <img src="ninja.png" alt="ninja icon">
+          </div>
+          <div class="ninja">
+            <img src="ninja.png" alt="ninja icon">
+          </div>
+        </div>
+        <div id="footer">
+          <button type="button">Restore</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

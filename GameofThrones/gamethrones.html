@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" type="text/css" href="gamethrones.css">
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+        $('img').click(function(){
+          var id = $(this).attr('id');
+          for(var i = 1; i < 379; i++){
+            $.get("http://anapioficeandfire.com/api/houses/"+i, function(response){
+              if(response.name.includes(id)){
+                console.log('yo')
+                var name = response.name;
+                var words = response.words;
+                var titles = response.titles;
+                $('#details').html("<p>Name: "+name+"</p><p>Words: "+words+"</p><p>Name: "+name+"</p><p>Titles: "+titles+"");
+              }
+          }, "json");
+        };
+      });
+    });
+  	</script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="top">
+        <div class="houses">
+          <img id="Stark" src="stark.jpg" alt="House Stark">
+        </div>
+        <div class="houses">
+          <img id="Targaryen" src="targaryen.jpg" alt="House Targaryen">
+        </div>
+        <div class="houses">
+          <img id="Lannister" src="lannister.jpg" alt="House Lannister">
+        </div>
+        <div class="houses">
+          <img id="Baratheon" src="baratheon.png" alt="House Baratheon">
+        </div>
+      </div>
+      <div id="bottom">
+          <div id="details">
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

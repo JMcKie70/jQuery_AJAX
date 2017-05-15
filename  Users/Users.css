@@ -1,0 +1,45 @@
+*{
+  margin:0px auto;
+  padding:0px auto;
+}
+.wrapper{
+  width:500px;
+  height:500px;
+  margin-top:20px;
+  margin-left:20px;
+}
+table{
+  width:500px;
+  height:35px;
+  border:1px solid black;
+  margin-bottom:40px;
+}
+.add-user{
+  width:500px;
+  height:300px;
+
+}
+h1{
+  width:250px;
+  height:30px;
+  margin-bottom:20px;
+  margin-right:250px;
+  padding-bottom:5px;
+  border-bottom:2px solid gray
+}
+form{
+  width:250px;
+  height:140px;
+  text-align:right;
+  margin-right:243px;
+}
+p{
+  margin:7px;
+}
+button{
+  width:70px;
+  height:21px;
+  margin-left:183px;
+  margin-bottom:50px;
+
+}

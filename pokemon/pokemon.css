@@ -1,0 +1,25 @@
+*{
+  margin: 0px auto;
+  padding: 0px auto;
+}
+#wrapper{
+  width: 900px;
+  height: 1875px;
+}
+h1{
+  width: 875px;
+  height: 75px;
+  padding-top:25px;
+  padding-left:25px;
+  font-family:sans-serif;
+  color:rgb(50,61,71);
+}
+#content{
+  width: 900px;
+  height: 1800px;
+}
+img{
+  width: 88px;
+  height: 88px;
+  padding:6px;
+}

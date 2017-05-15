@@ -1,0 +1,54 @@
+#wrapper{
+  width: 940px;
+  height: 2700px;
+}
+#icons{
+  width: 600px;
+  height: 2700px;
+  vertical-align: top;
+  display:inline-block;
+  text-align: left;
+}
+img{
+  width: 88px;
+  height: 88px;
+  padding:6px;
+}
+#pokedex{
+  width:230px;
+  height:470px;
+  border:25px red solid;
+  display:inline-block;
+  vertical-align:top;
+  text-align:right;
+  margin-left:20px;
+  position:fixed;
+}
+h1{
+  width:230px;
+  height:35px;
+  text-align: center;
+  vertical-align:middle;
+}
+img #image{
+  width: 100px;
+  height: 100px;
+  margin-right:64px;
+  text-align:center;
+}
+h4{
+  width:60px;
+  text-align: left;
+  margin-left:10px;
+}
+ul{
+  text-align: left;
+}
+ul li{
+
+}
+p{
+  width:60px;
+  text-align: left;
+  margin-left:10px;
+}

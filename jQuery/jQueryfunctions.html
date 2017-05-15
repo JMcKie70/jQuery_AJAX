@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Functions</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type='text/javascript'>
+      $(document).ready(function() {
+        $('.addclass_button').click(function() {
+          $('p').addClass('blue_text');
+          });
+        $('.slidetoggle_button').click(function() {
+          $('img').slideToggle('1000');
+        });
+        $('.append_button').click(function() {
+          $('.append_text').append(' please');
+        });
+        $('.fadeout_button').click(function() {
+          $('.fade_text').fadeOut('2000');
+        });
+        $('.fadein_button').click(function() {
+          $('.fade_text').fadeIn('2000');
+        });
+        $('input').keyup(function() {
+          var value = $(this).val();
+          $('.val_text').text(value);
+        });
+        $('.hide_button').click(function() {
+          $('.hideshow_text').hide();
+        });
+        $('.show_button').click(function() {
+          $('.hideshow_text').show();
+        });
+        $('.toggle_button').click(function() {
+          $('.toggle_text').toggle();
+        });
+        $('.data_x').data('test', { first: 'apples', last: 'oranges' });
+        $('span:first').text($('.data_x').data('test').first);
+        $('span:last').text($('.data_x').data('test').last);
+        $('.slideup_button').click(function() {
+          if ($('.cool_wrapper').is(":hidden")) {
+            $('.cool_wrapper').slideDown();
+          }
+          else {
+            $('.cool_wrapper').slideUp();
+          }
+        });
+        $('.before_button').click(function() {
+          $('.ba').before("<p><b>before</b></p>");
+        });
+        $('.after_button').click(function() {
+          $('.ba').after("<p>after</p>");
+        });
+        $('.html_div').html("<b>Cool text!!!</b>");
+        $('.attr_img').attr('src', '');
+      });
+    </script>
+  </head>
+  <body>
+    <div id='wrapper'>
+      <div class='function_wrapper'>
+        <h1>addClass</h1>
+        <p class='val_ex'>Click the button to add class 'blue' to this paragraph</p>
+        <button class='addclass_button'>addClass</button>
+      </div>
+      <div class='cool_wrapper'>
+        <img src='./chellocat.jpg' alt="cat cartoon">
+        <h1>slideToggle</h1>
+        <p>Click the button to slidetoggle a hidden image</p>
+        <button class='slidetoggle_button'>slideToggle</button>
+      </div>
+      <div class='function_wrapper'>
+        <h1>append</h1>
+        <p class='append_text'>Click the button to append a new paragraph</p>
+        <button class='append_button'>append</button>
+      </div>
+      <div class='function_wrapper'>
+        <h1>fadeOut and fadeIn</h1>
+        <p class='fade_text'>This text will fade out on button press</p>
+        <button class='fadeout_button'>fadeOut</button>
+        <button class='fadein_button'>fadeIn</button>
+      </div>
+      <div class='function_wrapper'>
+        <h1>val</h1>
+        <input type='text' value='.val example'>
+        <p class='val_text'></p>
+      </div>
+      <div class='function_wrapper'>
+        <h1>hide and show</h1>
+        <p class='hideshow_text'>We can hide and show this text</p>
+        <button class='hide_button'>Hide</button>
+        <button class='show_button'>Show</button>
+      </div>
+      <div class='function_wrapper'>
+        <h1>Data</h1>
+        <div class='data_x'>
+          <p>I like to eat</p>
+          <span></span>
+          <p>and</p>
+          <span></span>
+        </div>
+      </div>
+      <div class='function_wrapper'>
+        <h1>Toggle</h1>
+        <button class='toggle_button'>Toggle</button>
+        <p class='toggle_text'>Toggling this text</p>
+      </div>
+      <div class='function_wrapper'>
+        <h1>Slide up and slide down</h1>
+        <button class='slideupdown_button'>Slide up and down</button>
+      </div>
+      <div class='function_wrapper'>
+        <h1>Before and after</h1>
+        <h2 class='ba'>There will be text above on Before press and below on After press</h2>
+        <button class='before_button'>Before</button>
+        <button class='after_button'>After</button>
+      </div>
+      <div class='function_wrapper'>
+        <h1>HTML</h1>
+        <div class='html_div'></div>
+        <div class='html_div'></div>
+        <div class='html_div'></div>
+      </div>
+      <div class='function_wrapper'>
+        <img class='attr_img' src='./chellocat.jpg' alt='This text will change'>
+      </div>
+    </div>
+  </body>
+</html>
